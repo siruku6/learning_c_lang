@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  c_base:
+    container_name: c_base
+    build:
+      context: ./
+      dockerfile: ./docker/Dockerfile
+    tty: true
+    volumes:
+      - ./:/app
