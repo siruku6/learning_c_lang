@@ -2,9 +2,10 @@ FROM debian:bullseye-slim
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
-    git \
-    gcc \
-    gdb \
+  git \
+  gcc \
+  g++ \
+  gdb \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
