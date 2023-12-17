@@ -6,6 +6,8 @@ services:
     build:
       context: ./
       dockerfile: ./docker/Dockerfile
+    stdin_open: true
     tty: true
     volumes:
       - ./:/app
+    init: true
